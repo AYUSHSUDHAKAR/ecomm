@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route, HashRouter } from "react-router-dom";
 import Home from "./core/Home";
 import Signin from "./user/Signin";
 import Signup from "./user/Signup";
@@ -15,7 +15,7 @@ import UpdateProduct from "./admin/UpdateProduct";
 import Cart from "./core/Cart";
 export default function Routes() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/signup" exact component={Signup} />
@@ -41,6 +41,6 @@ export default function Routes() {
           component={UpdateProduct}
         />
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
