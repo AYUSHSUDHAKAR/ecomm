@@ -8,7 +8,7 @@ const Base = ({
   children,
 }) => {
   return (
-    <div>
+    <div className="top">
       <Menu />
       <div className="container-fluid">
         <div className="jumbotron bg-dark text-white text-center">
@@ -22,9 +22,9 @@ const Base = ({
           <h4>If you got any questions, feel free to contact</h4>
           <button className="btn btn-warning btn-lg">Contact Us</button>
         </div>
-        <div className="container">
+        {/* <div className="container">
           <span className="text-muted">An Amazing MERN Bootcamp</span>
-        </div>
+        </div> */}
       </footer>
     </div>
   );
